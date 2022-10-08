@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#menu .list {
+    @apply block p-5 text-base font-bold border-b border-solid border-sky-300 text-center cursor-pointer;
+}
+
+#menu li:hover {
+    @apply bg-white text-base-blue-300 border-base-blue-300 transition ease-in duration-300;
+}
+
+#links li{
+    @apply inline-block p-1 border-0 bg-base-blue-400 decoration-0 list-none cursor-pointer;
+}
+
+
+#links img {
+    @apply h-6;
+ }
+
+ h1 {
+     @apply m-0 py-5 px-0 text-4xl;
+ }
+
+ .under,.line {
+     @apply w-full h-1 mb-4 bg-white;
+ }
+
+ #parent {
+     @apply flex flex-row border-b-4 border-solid border-base-blue-100;
+ }
+
+ .words h2 {
+     @apply text-2xl;
+ }
+ .words p {
+     @apply my-4;
+ }
+
+ button {
+    @apply border-0 outline-0 bg-white text-base-blue-300 py-2 px-6 font-semibold uppercase cursor-pointer;
+}
+
+ button:hover {
+    @apply bg-base-blue-300 text-white transition ease-in duration-200;
+}
+
+#parent .image{
+     @apply  my-0 mx-5 py-5 w-72 h-96;
+ }
+
+ .image img{
+     @apply min-w-[288px] h-full object-cover rounded-xl;
+ }
+
+ .box {
+     @apply bg-base-blue-100 py-10 px-8 text-larger;
+ }
+
+ .box:hover {
+     @apply bg-white text-black transition ease-in duration-200;
+ }
+
+ .box h2 {
+     @apply text-2xl;
+ }
+
+ .box img {
+     @apply w-0.75;
+ }
+
+ .header span:active {
+     @apply text-base-blue-300 border-b-4 border-solid border-base-blue-300;
+ }
+
+ .album div {
+     @apply bg-orange-700 p-5;
+}
+
+.album div:nth-child(even) {
+    @apply bg-indigo-700;
+}
+
+input,textarea{
+    @apply my-5 mx-0 bg-inherit border border-solid border-white outline-0 text-white py-3 px-3;
+}
+
+@media(max-width: 1250px){
+    body #nav-menu {
+        @apply ml-0 w-1/4;
+    }
+}
+
+@media(max-width: 1050px) {
+    #smallmenu {
+        @apply flex items-center justify-center;
+    }
+
+    nav {
+        @apply hidden
+    }
+
+    #nav-menu {
+        @apply relative px-3 py-5 w-1/3;
+    }
+
+    #nav-menu i {
+        @apply block border-0 outline-0 h-16 top-0 left-0 bg-white text-base-blue-300;
+    }
+
+    body #container {
+        @apply my-0 mx-[10%];
+    }
+
+    .images .album {
+        @apply grid grid-cols-[auto] grid-rows-[repeat(6,_500px)]
+    }
+
+    .album div.one {
+        @apply row-start-1 row-end-2;
+    }
+    .album div.two{
+        @apply row-start-2 row-end-3;
+    }
+    .album div.three {
+        @apply row-start-3 row-end-4;
+    }
+    .album div.four {
+        @apply row-start-4 row-end-5;
+    }
+    .album div.five {
+        @apply row-start-5 row-end-6;
+    }
+    .album div.six {
+        @apply row-start-6 row-end-7;
+    }
+
+}

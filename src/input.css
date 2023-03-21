@@ -86,8 +86,27 @@ body{
      @apply text-base-blue-300 border-b-2 border-solid border-base-blue-300;
  }
 
- .album div {
-     @apply bg-orange-700 p-5;
+ .album div.img {
+     @apply bg-orange-600 p-5 relative;
+}
+
+.album div #hover {
+    transform: rotateX(-90deg);
+    transform-origin: 50% 50%;
+    transition: all 0.4s ease-in-out;
+    @apply block absolute top-5 left-5 bottom-5 right-5 bg-white opacity-0;  
+}
+
+.album div.img:hover #hover {
+    transform: rotateX(0deg);
+    @apply opacity-100;
+}
+.album div.img .imgtext {
+    transition: all 0.4s ease-in-out;
+}
+
+.album div.img:hover .imgtext {
+    @apply opacity-100 translate-y-24;
 }
 
 .album div:nth-child(even) {

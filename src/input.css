@@ -79,7 +79,7 @@ body{
  }
 
  .header span {
-    @apply border-b-2 border-solid border-base-blue-200;
+    @apply border-b-2 border-solid border-base-blue-200 cursor-pointer;
 }
 
  .header span:active {
@@ -88,6 +88,26 @@ body{
 
  .album div.img {
      @apply bg-orange-600 p-5 relative;
+}
+
+/*img  selection */
+div.img .one.active {
+    @apply row-span-2 col-span-1;
+}
+div.img .two.active {
+    @apply row-start-1 row-span-1 col-span-1;
+}
+div.img .three.active {
+    @apply col-start-1 col-span-1;
+}
+div.img .four.active {
+    @apply row-start-1 row-end-3;
+}
+div.img .five.active {
+    @apply col-start-1;
+}
+div.img .six.active {
+    @apply col-start-2 row-span-1 col-span-1;
 }
 
 .album div #hover {

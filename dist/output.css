@@ -1175,6 +1175,7 @@ button:hover {
 }
 
 .header span {
+  cursor: pointer;
   border-bottom-width: 2px;
   border-style: solid;
   --tw-border-opacity: 1;
@@ -1195,6 +1196,39 @@ button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
   padding: 1.25rem;
+}
+
+/*img  selection */
+
+div.img .one.active {
+  grid-column: span 1 / span 1;
+  grid-row: span 2 / span 2;
+}
+
+div.img .two.active {
+  grid-column: span 1 / span 1;
+  grid-row: span 1 / span 1;
+  grid-row-start: 1;
+}
+
+div.img .three.active {
+  grid-column: span 1 / span 1;
+  grid-column-start: 1;
+}
+
+div.img .four.active {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+div.img .five.active {
+  grid-column-start: 1;
+}
+
+div.img .six.active {
+  grid-column: span 1 / span 1;
+  grid-column-start: 2;
+  grid-row: span 1 / span 1;
 }
 
 .album div #hover {

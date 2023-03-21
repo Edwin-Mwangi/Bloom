@@ -32,7 +32,7 @@ body{
  }
 
  #parent {
-     @apply flex flex-row border-b-4 border-solid border-base-blue-100;
+     @apply grid grid-cols-5 py-6 border-b-2 border-solid border-base-blue-100;
  }
 
  .words h2 {
@@ -51,11 +51,11 @@ body{
 }
 
 #parent .image{
-     @apply  my-0 mx-5 py-5 w-72 h-96;
+     @apply col-span-2 my-0 mx-5 py-5;
  }
 
  .image img{
-     @apply min-w-[288px] h-full object-cover rounded-xl;
+     @apply object-cover rounded-xl min-h-[200px];
  }
 
  .box {
@@ -91,16 +91,18 @@ input,textarea{
 }
 
 @media(max-width: 1250px){
+    body #bodywrapper {
+        @apply ml-[35%];
+    }
     body nav {
         @apply ml-0;
     }
     body #nav-menu {
         @apply w-full;
     }
-
 }
 
-@media(max-width: 1050px) {
+@media(max-width: 845px) {
     #smallmenu {
         @apply flex items-center justify-center;
     }
@@ -120,7 +122,7 @@ input,textarea{
         @apply block border-0 outline-0 h-16 top-0 left-0 bg-white text-base-blue-300;
     }
 
-    body #container {
+    body #bodywrapper {
         @apply my-0 mx-[10%];
     }
 

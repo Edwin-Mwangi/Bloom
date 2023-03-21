@@ -12,7 +12,7 @@
     <i class="fa-solid fa-bars text-base-blue-300 text-3xl"></i>
   </button>
 
-  <nav class="fixed my-0 top-0 h-screen w-nav ">
+  <nav class="fixed ml-12 my-0 top-0 h-screen w-1/4 min-w-nav max-w-[300px]">
     <div id="xmark" class="hidden w-full">
       <div class="flex items-center justify-center bg-white w-full h-16.5">
         <i class="fa-solid fa-xmark text-base-blue-300 text-3xl"></i>
@@ -46,11 +46,12 @@
   </nav>
   
   
-  <div class="ml-96.5 mr-12 text-white text-normal leading-8" id="container">
+  <div id="bodywrapper" class="ml-96 mr-12 text-white text-normal leading-8" id="container">
     <div class="intro">
       <div class="top-image">
         <img src="../src/assets/images/aerobic-girls.jpg" alt="" class=" w-full overflow-hidden">
       </div>
+
       <div class=" inline-block" >
         <h1>Introducing Blugoon</h1>
         <div class="under line"></div>
@@ -60,8 +61,9 @@
          This is a Bootstrap v4.3.1 layout which you can fully customize for your websites. 
          Please tell your friends about Tooplate. Thank you.
       </p>
+    </div>
       <div id="parent">
-        <div class="words">
+        <div class="words col-span-3">
           <h2 class=" my-5 font-black text-3xl">Modern Web Design</h2>
           <p>You are allowed to use this template for commercial or personal websites. 
             You are NOT allowed to redistribute this on template collection website. 
@@ -70,15 +72,15 @@
           </p>
           <button>Read More</button>
         </div>
-        <div class="image">
+        <div class="image col-start-4">
           <img src="../src/assets/images/chill.jpg" alt="">
         </div>
       </div>
       <div id="parent">
-        <div class="image">
+        <div class="image col-start-1">
           <img src="../src/assets/images/chill.jpg" alt="">
         </div>
-        <div class="words">
+        <div class="words col-span-3">
           <h2 class=" my-5 font-black text-3xl">Best Template for you!</h2>
           <p>You are allowed to use this template for commercial or personal websites. 
             You are NOT allowed to redistribute this on template collection website. 
@@ -89,7 +91,7 @@
         </div>
       </div>
 
-    </div>
+    
     <div class="features">
       <div class=" inline-block">
         <h1>Greatest Features</h1>

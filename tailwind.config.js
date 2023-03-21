@@ -21,6 +21,9 @@ module.exports = {
         normal: '.95rem',
         larger: '1.05rem',
       },
+      minWidth: {
+        nav: '200px',
+      },
       width: {
         nav: '300px',
         16.5: '75px',

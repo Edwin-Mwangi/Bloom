@@ -23,6 +23,10 @@ body{
     @apply h-6;
  }
 
+ body #bodywrapper {
+
+ }
+
  h1 {
      @apply m-0 py-5 px-0 text-4xl;
  }
@@ -92,9 +96,9 @@ input,textarea{
 
 @media(max-width: 1250px){
     body #bodywrapper {
-        @apply ml-[35%];
+        @apply ml-[30%];
     }
-    body nav {
+    body nav.fixed {
         @apply ml-0;
     }
     body #nav-menu {

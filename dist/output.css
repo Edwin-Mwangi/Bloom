@@ -723,6 +723,10 @@ video {
   height: 100vh;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .w-16\.5 {
   width: 75px;
 }
@@ -791,6 +795,10 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.self-start {
+  align-self: flex-start;
 }
 
 .self-center {
@@ -1153,12 +1161,11 @@ input, textarea {
     justify-content: center;
   }
 
-  nav {
-    display: none;
-  }
+  /* nav {
+        @apply hidden
+    } */
 
   #nav-menu {
-    position: relative;
     width: 33.333333%;
     padding-left: 0.75rem;
     padding-right: 0.75rem;

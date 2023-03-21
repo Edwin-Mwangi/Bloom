@@ -101,12 +101,12 @@ input,textarea{
         @apply flex items-center justify-center;
     }
 
-    nav {
+    /* nav {
         @apply hidden
-    }
+    } */
 
     #nav-menu {
-        @apply relative px-3 py-5 w-1/3;
+        @apply px-3 py-5 w-1/3;
     }
 
     #nav-menu i {

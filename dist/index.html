@@ -8,12 +8,13 @@
 </head>
 
 <body class="bg-base-blue-200 m-0">
-  <div id="smallmenu" class="hidden fixed border-0 outline-0 z-10 w-16.5 h-16.5 top-0 left-0 bg-white text-base-blue-400 text-center" >
+  <button id="smallmenu" class="hidden fixed border-0 outline-0 z-10 w-16.5 h-16.5 top-0 left-0 bg-white text-base-blue-400 text-center" >
     <i class="fa-solid fa-bars text-base-blue-300 text-3xl"></i>
-  </div>
+  </button>
 
   <nav>
     <div id="nav-menu" class="flex flex-col items-center top-0 h-screen w-nav bg-base-blue-300 text-white mx-12 my-0 fixed">
+      <div class="fixed w-full h-5 bg-white self-start"></div>
       <div id="xmark" class="w-full hidden">
         <div class="flex items-center justify-center bg-white w-full h-16.5">
           <i class="fa-solid fa-xmark text-base-blue-300 text-3xl"></i>
@@ -157,7 +158,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione possimus, fugiat repudiandae aliquid iure quibusdam.</p>
       <form class="flex flex-col my-12 mx-auto rounded-lg">
         <div class=" flex flex-row justify-between">
-          <input type="text" id="email" placeholder="email" class=" inline-block w-custom">
+          <input type="text" id="email" placeholder="email" name='email' class=" inline-block w-custom">
           <input type="password" id="password" placeholder="password" class=" inline-block w-custom">
         </div>
           

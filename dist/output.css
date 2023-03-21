@@ -988,7 +988,7 @@ body{
   font-weight: 700;
 }
 
-#menu li:hover {
+#menu li:hover,  #menu li.active {
   --tw-border-opacity: 1;
   border-color: rgb(34 121 189 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;

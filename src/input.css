@@ -10,7 +10,7 @@ body{
     @apply block p-5 text-base font-bold border-b border-solid border-sky-300 text-center cursor-pointer;
 }
 
-#menu li:hover {
+#menu li:hover, #menu li.active {
     @apply bg-white text-base-blue-300 border-base-blue-300 transition ease-in duration-300;
 }
 

@@ -87,26 +87,48 @@ body{
  }
 
  .album div.img {
-     @apply bg-orange-600 p-5 relative;
+    @apply bg-orange-600 p-5 relative;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+.album div.img.hide {
+    transform: scale(0);
+    opacity: 1;
 }
 
 /*img  selection */
-div.img .one.active {
-    @apply row-span-2 col-span-1;
-}
-div.img .two.active {
-    @apply row-start-1 row-span-1 col-span-1;
-}
-div.img .three.active {
-    @apply col-start-1 col-span-1;
-}
-div.img .four.active {
+div.img.one {
     @apply row-start-1 row-end-3;
 }
-div.img .five.active {
+div.img.one.active {
+    @apply row-span-2 col-span-1;
+}
+div.img.two {
+    @apply row-start-3 row-end-4;
+}
+div.img.two.active {
+    @apply row-start-1 row-span-1 col-span-1;
+}
+div.img.three {
+    @apply row-start-1 row-end-2;
+}
+div.img.three.active {
+    @apply col-start-1 col-span-1;
+}
+div.img.four {
+    @apply row-start-2 row-end-4;
+}
+div.img.four.active {
+    @apply row-start-1 row-end-3;
+}
+div.img.five {
+    @apply row-start-1 row-end-3;
+}
+div.img.five.active {
     @apply col-start-1;
 }
-div.img .six.active {
+div.img.six.active {
     @apply col-start-2 row-span-1 col-span-1;
 }
 
@@ -118,7 +140,8 @@ div.img .six.active {
 }
 
 .album div.img:hover #hover {
-    transform: rotateX(0deg);
+    /* larger perspective val = smaller perspective can be px,cm,rem etc but 0 no perspective */
+    transform: perspective(20rem) rotateX(0deg);
     @apply opacity-100;
 }
 .album div.img .imgtext {

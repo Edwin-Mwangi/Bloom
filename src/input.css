@@ -87,14 +87,14 @@ body{
  }
 
  .album div.img {
-    @apply bg-orange-600 p-5 relative;
+    @apply bg-orange-600 p-5 relative rounded-xl;
     transform: scale(1);
     opacity: 1;
     transition: all 0.4s ease-in-out;
 }
 .album div.img.hide {
     transform: scale(0);
-    opacity: 1;
+    opacity: 0;
 }
 
 /*img  selection */

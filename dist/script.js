@@ -25,7 +25,7 @@ imgOptions.forEach(option =>{
                     }, 400)                   
                 }
                 setTimeout(()=>{
-                    image.classList.remove('hidden','hide')                            
+                    image.classList.remove('hidden','hide')                                
                 }, 400) 
             })
         }

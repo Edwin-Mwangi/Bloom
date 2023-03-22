@@ -1169,6 +1169,7 @@ button:hover {
 
 .album div.img {
   position: relative;
+  border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
   padding: 1.25rem;
@@ -1179,7 +1180,7 @@ button:hover {
 
 .album div.img.hide {
   transform: scale(0);
-  opacity: 1;
+  opacity: 0;
 }
 
 /*img  selection */

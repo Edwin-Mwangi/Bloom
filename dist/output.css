@@ -982,6 +982,10 @@ video {
   outline-width: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -993,8 +997,12 @@ body{
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(125 211 252 / var(--tw-border-opacity));
-  padding: 1.25rem;
   text-align: center;
+}
+
+#menu .list a {
+  display: block;
+  padding: 1.25rem;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 700;
@@ -1051,7 +1059,7 @@ h1 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-#parent {
+.parent {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   border-bottom-width: 2px;

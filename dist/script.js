@@ -9,6 +9,9 @@ navButtons.forEach(button =>{
     })
 } )
 
+//scroll behavior
+//tbd
+
 //gallery behaviour
 const imgOptions = document.querySelectorAll('div.header span');
 const gallery = document.querySelectorAll( 'div.album .img')

@@ -2,12 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #menu .list {
-    @apply block p-5 text-base font-bold border-b border-solid border-sky-300 text-center cursor-pointer;
+    @apply block  border-b border-solid border-sky-300 text-center cursor-pointer;
+}
+
+#menu .list a{
+    @apply block p-5 text-base font-bold;
 }
 
 #menu li:hover, #menu li.active {
@@ -35,7 +42,7 @@ body{
      @apply w-full h-1 mb-4 bg-white;
  }
 
- #parent {
+ .parent {
      @apply grid grid-cols-5 py-6 border-b-2 border-solid border-base-blue-100;
  }
 

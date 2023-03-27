@@ -20,24 +20,22 @@ window.addEventListener('scroll', checkSections);
 checkSections();
 
 function checkSections(){
-    const triggerBottom = window.innerHeight / 5 * 2;
+    const triggerTop = window.innerHeight / 5 * 2;
     for(i=0; i<sections.length; i++){
         const sectionTop = sections[i].getBoundingClientRect().top
-        // console.log('triggerBtm:',triggerBottom,'section:', sectionTop)
-
-        if(sectionTop < triggerBottom){
-            navLists.forEach(list =>{
-                if(list.classList.contains('active')){
-                    list.classList.remove('active')
-                }
-            })
-            if(!navLists[i].classList.contains('active')){
+        if(sectionTop < triggerTop){
+            if(!navLists[i].classList.contains('active') ){
                 navLists[i].classList.add('active')
+            }else{
+                if(i != 0){
+                    for(j=0; j<i; j++){
+                        navLists[j].classList.remove('active')
+                    }
+                }
             }
         }else{
             navLists[i].classList.remove('active')
-        }
-        
+        } 
     }
 }
 

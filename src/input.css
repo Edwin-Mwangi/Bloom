@@ -97,7 +97,7 @@ body{
  }
 
  .album div.img {
-    @apply bg-orange-600 p-5 relative rounded-xl;
+    @apply p-5 relative rounded-xl;
     transform: scale(1);
     opacity: 1;
     transition: all 0.4s ease-in-out;
@@ -110,34 +110,49 @@ body{
 /*img  selection */
 div.img.one {
     @apply row-start-1 row-end-3;
+    background-image: url('/src/assets/images/lavender2.jpg');
+    background-size: cover;
 }
 div.img.one.active {
     @apply row-span-2 col-span-1;
 }
 div.img.two {
     @apply row-start-3 row-end-4;
+    background-image: url('/src/assets/images/lavender.jpg');
+    background-size: cover;
 }
 div.img.two.active {
     @apply row-start-1 row-span-1 col-span-1;
 }
 div.img.three {
     @apply row-start-1 row-end-2;
+    background-image: url('/src/assets/images/tulips.jpg');
+    background-size: cover;
 }
 div.img.three.active {
     @apply col-start-1 col-span-1;
 }
 div.img.four {
     @apply row-start-2 row-end-4;
+    background-image: url('/src/assets/images/roses2.jpg');
+    background-size: cover;
 }
 div.img.four.active {
     @apply row-start-1 row-end-3;
 }
 div.img.five {
     @apply row-start-1 row-end-3;
+    background-image: url('/src/assets/images/roses.jpg');
+    background-size: cover;
 }
 div.img.five.active {
     @apply col-start-1;
 }
+div.img.six {
+    background-image: url('/src/assets/images/tulips3.jpg');
+    background-size: cover;
+}
+
 div.img.six.active {
     @apply col-start-2 row-span-1 col-span-1;
 }

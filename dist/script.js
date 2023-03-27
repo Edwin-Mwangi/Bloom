@@ -64,7 +64,7 @@ imgOptions.forEach(option =>{
                 },410)
             })
         }
-        if(option.innerHTML == 'Pretty'){
+        if(option.innerHTML == 'Roses'){
             gallery.forEach(image =>{
                 image.classList.add('hide')
                 setTimeout(()=>{
@@ -80,7 +80,7 @@ imgOptions.forEach(option =>{
                 }, 400)
             })
         }
-        if(option.innerHTML == 'Sexy'){
+        if(option.innerHTML == 'Tulips'){
             gallery.forEach(image =>{
                 image.classList.add('hide')
                 setTimeout(()=>{
@@ -96,7 +96,7 @@ imgOptions.forEach(option =>{
                 }, 410)
             })
         }
-        if(option.innerHTML == 'Beach'){
+        if(option.innerHTML == 'Lavender'){
             gallery.forEach(image =>{
                 image.classList.add('hide')
                 setTimeout(()=>{

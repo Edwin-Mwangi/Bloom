@@ -982,12 +982,15 @@ video {
   outline-width: 0px;
 }
 
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,500;0,600;1,300;1,500;1,600&display=swap'); */
+
 html {
   scroll-behavior: smooth;
 }
 
 body{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'Cormorant Infant', serif;
 }
 
 #menu .list {
@@ -1178,8 +1181,6 @@ button:hover {
 .album div.img {
   position: relative;
   border-radius: 0.75rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
   padding: 1.25rem;
   transform: scale(1);
   opacity: 1;
@@ -1196,6 +1197,8 @@ button:hover {
 div.img.one {
   grid-row-start: 1;
   grid-row-end: 3;
+  background-image: url('/src/assets/images/lavender2.jpg');
+  background-size: cover;
 }
 
 div.img.one.active {
@@ -1206,6 +1209,8 @@ div.img.one.active {
 div.img.two {
   grid-row-start: 3;
   grid-row-end: 4;
+  background-image: url('/src/assets/images/lavender.jpg');
+  background-size: cover;
 }
 
 div.img.two.active {
@@ -1217,6 +1222,8 @@ div.img.two.active {
 div.img.three {
   grid-row-start: 1;
   grid-row-end: 2;
+  background-image: url('/src/assets/images/tulips.jpg');
+  background-size: cover;
 }
 
 div.img.three.active {
@@ -1227,6 +1234,8 @@ div.img.three.active {
 div.img.four {
   grid-row-start: 2;
   grid-row-end: 4;
+  background-image: url('/src/assets/images/roses2.jpg');
+  background-size: cover;
 }
 
 div.img.four.active {
@@ -1237,10 +1246,17 @@ div.img.four.active {
 div.img.five {
   grid-row-start: 1;
   grid-row-end: 3;
+  background-image: url('/src/assets/images/roses.jpg');
+  background-size: cover;
 }
 
 div.img.five.active {
   grid-column-start: 1;
+}
+
+div.img.six {
+  background-image: url('/src/assets/images/tulips3.jpg');
+  background-size: cover;
 }
 
 div.img.six.active {

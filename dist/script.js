@@ -51,14 +51,10 @@ imgOptions.forEach(option =>{
     option.addEventListener('click', ()=>{
         if(option.innerHTML == 'All'){
             gallery.forEach(image =>{
-                if(image.classList.contains('active')){
-                    image.classList.add('hide')
-                }else{
                     image.classList.add('hide')
                     setTimeout(()=>{
                         image.classList.remove('hidden')
                     },400)
-                }
                 // hidden and hide must be at diff times..bruteforce
                 setTimeout(()=>{
                     if(image.classList.contains('active')){
@@ -75,13 +71,45 @@ imgOptions.forEach(option =>{
                     image.classList.add('hidden')
                     if(image.classList.contains('five')||image.classList.contains('four')){
                         image.classList.add('active')
-                        image.classList.remove('hidden','hide')
+                        image.classList.remove('hidden')
+                        setTimeout(()=>{
+                            image.classList.remove('hide')
+                        }, 410)
                     }
-                    image.classList.remove('hide')
+                    
                 }, 400)
             })
         }
-    
-
+        if(option.innerHTML == 'Sexy'){
+            gallery.forEach(image =>{
+                image.classList.add('hide')
+                setTimeout(()=>{
+                    image.classList.add('hidden')
+                    if(image.classList.contains('three')||image.classList.contains('six')){
+                        image.classList.add('active')
+                        image.classList.remove('hidden')
+                    }
+                    
+                }, 400)
+                setTimeout(()=>{
+                    image.classList.remove('hide')
+                }, 410)
+            })
+        }
+        if(option.innerHTML == 'Beach'){
+            gallery.forEach(image =>{
+                image.classList.add('hide')
+                setTimeout(()=>{
+                    image.classList.add('hidden')
+                    if(image.classList.contains('one')||image.classList.contains('two')){
+                        image.classList.add('active')
+                        image.classList.remove('hidden')
+                    }
+                    setTimeout(()=>{
+                        image.classList.remove('hide')
+                    }, 410)
+                }, 400)
+            })
+        }
     })
 })

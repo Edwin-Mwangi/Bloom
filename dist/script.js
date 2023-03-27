@@ -12,9 +12,9 @@ navButtons.forEach(button =>{
         button.parentElement.classList.add('active')
     })
 } )
+
 //activating active when certain point is reached
 const sections = document.querySelectorAll('section');
-console.log(sections);
 window.addEventListener('scroll', checkSections);
 
 checkSections();
@@ -51,22 +51,21 @@ imgOptions.forEach(option =>{
     option.addEventListener('click', ()=>{
         if(option.innerHTML == 'All'){
             gallery.forEach(image =>{
-                image.classList.add('hide')
                 if(image.classList.contains('active')){
+                    image.classList.add('hide')
+                }else{
+                    image.classList.add('hide')
                     setTimeout(()=>{
-                        image.classList.add('hidden')        
-                        image.classList.remove('active')                     
-                    }, 400)                   
-                }//else{
-                //     //rest of images were displaying 1st so had to tweak(bruteforce)
-                //     image.classList.toggle('hide')
-                //     setTimeout(()=>{
-                //         image.classList.add('hide')                                
-                //     }, 400)
-                // }
+                        image.classList.remove('hidden')
+                    },400)
+                }
+                // hidden and hide must be at diff times..bruteforce
                 setTimeout(()=>{
-                    image.classList.remove('hidden','hide')                                
-                }, 400) 
+                    if(image.classList.contains('active')){
+                        image.classList.remove('active')
+                    }
+                    image.classList.remove('hide')
+                },410)
             })
         }
         if(option.innerHTML == 'Pretty'){

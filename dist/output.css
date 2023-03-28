@@ -1325,35 +1325,25 @@ input, textarea {
   outline-width: 0px;
 }
 
-::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
   opacity: 1;
   /* Firefox */
 }
 
-:-ms-input-placeholder {
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
   opacity: 1;
   /* Firefox */
 }
 
-::placeholder {
+input::placeholder, textarea::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
   opacity: 1;
   /* Firefox */
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: white;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: white;
 }
 
 @media(max-width: 1250px){

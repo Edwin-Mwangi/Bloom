@@ -186,18 +186,10 @@ div.img.six.active {
 input,textarea{
     @apply my-5 mx-0 bg-inherit border border-solid border-white outline-0 text-white py-3 px-3;
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+input::placeholder, textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
     opacity: 1; /* Firefox */
   }
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-color: white;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-color: white;
-}
 
 @media(max-width: 1250px){
     body #bodywrapper {

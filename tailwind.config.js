@@ -16,6 +16,9 @@ module.exports = {
           400: '#1a639b',
           500: '#0019a7',
         },
+        'pink': {
+          350: '#f797c9',
+        }
       },
       fontSize: {
         normal: '.95rem',

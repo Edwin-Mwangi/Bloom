@@ -877,6 +877,11 @@ video {
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
 }
 
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -1101,7 +1106,7 @@ button {
 
 button:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
+  background-color: rgb(244 114 182 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
@@ -1110,6 +1115,12 @@ button:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  /*base*/
+}
+
+button:hover i {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   /*base*/
 }
 
@@ -1228,7 +1239,7 @@ div.img.two.active {
 div.img.three {
   grid-row-start: 1;
   grid-row-end: 2;
-  background-image: url('/src/assets/images/tulips.jpg');
+  background-image: url('/src/assets/images/tulips2.jpg');
   background-size: cover;
 }
 
@@ -1382,12 +1393,6 @@ input::placeholder, textarea::placeholder {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     padding-top: 0px;
-    /* background-color: hsl(206, 90%, 69%); */
-    /* 100: '#6abaf7',
-          200: '#53b4ff',
-          300: '#2279bd',
-          400: '#1a639b',
-          500: '#0019a7', */
   }
 
   #nav-menu i {

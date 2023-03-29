@@ -61,7 +61,10 @@ body{
 }
 
  button:hover {
-    @apply bg-pink-500 text-white transition ease-in duration-200;/*base*/
+    @apply bg-pink-400 text-white transition ease-in duration-200;/*base*/
+}
+button:hover i{
+    @apply  text-white;/*base*/
 }
 
 .parent .image{
@@ -128,7 +131,7 @@ div.img.two.active {
 }
 div.img.three {
     @apply row-start-1 row-end-2;
-    background-image: url('/src/assets/images/tulips.jpg');
+    background-image: url('/src/assets/images/tulips2.jpg');
     background-size: cover;
 }
 div.img.three.active {
@@ -217,12 +220,6 @@ input::placeholder, textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10
     }
     #nav-menu {
         @apply px-3 pt-0 py-5 w-1/3;
-        /* background-color: hsl(206, 90%, 69%); */
-        /* 100: '#6abaf7',
-          200: '#53b4ff',
-          300: '#2279bd',
-          400: '#1a639b',
-          500: '#0019a7', */
     }
 
     #nav-menu i {

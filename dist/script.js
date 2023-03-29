@@ -13,6 +13,17 @@ navButtons.forEach(button =>{
     })
 } )
 
+//activating click on small screens
+const smallMenu = document.getElementById('smallmenu');
+const closeNav = document.getElementById('xmark');
+const nav = document.querySelector('nav');
+
+smallMenu.addEventListener('click', ()=>{
+    nav.classList.add('in');
+})
+closeNav.addEventListener('click', ()=>{
+    nav.classList.remove('in');
+})
 //activating active when certain point is reached
 const sections = document.querySelectorAll('section');
 window.addEventListener('scroll', checkSections);

@@ -1380,6 +1380,13 @@ input::placeholder, textarea::placeholder {
 
   nav {
     display: none;
+    left: -500px;
+    transition: left 0.4s ease-in-out;
+  }
+
+  nav.in {
+    display: inline-block;
+    left: 0px;
   }
 
   nav div#xmark {

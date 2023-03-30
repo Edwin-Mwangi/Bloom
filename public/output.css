@@ -1214,7 +1214,7 @@ button:hover i {
 div.img.one {
   grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url('../public/assets/images/lavender2.jpg');
+  background-image: url('./assets/images/lavender2.jpg');
   background-size: cover;
 }
 
@@ -1226,7 +1226,7 @@ div.img.one.active {
 div.img.two {
   grid-row-start: 3;
   grid-row-end: 4;
-  background-image: url('../public/assets/images/lavender.jpg');
+  background-image: url('./assets/images/lavender.jpg');
   background-size: cover;
 }
 
@@ -1239,7 +1239,7 @@ div.img.two.active {
 div.img.three {
   grid-row-start: 1;
   grid-row-end: 2;
-  background-image: url('../public/assets/images/tulips2.jpg');
+  background-image: url('./assets/images/tulips2.jpg');
   background-size: cover;
 }
 
@@ -1251,7 +1251,7 @@ div.img.three.active {
 div.img.four {
   grid-row-start: 2;
   grid-row-end: 4;
-  background-image: url('../public/assets/images/roses2.jpg');
+  background-image: url('./assets/images/roses2.jpg');
   background-size: cover;
 }
 
@@ -1263,7 +1263,7 @@ div.img.four.active {
 div.img.five {
   grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url('../public/assets/images/roses.jpg');
+  background-image: url('./assets/images/roses.jpg');
   background-size: cover;
 }
 
@@ -1272,7 +1272,7 @@ div.img.five.active {
 }
 
 div.img.six {
-  background-image: url('../public/assets/images/tulips3.jpg');
+  background-image: url('./assets/images/tulips3.jpg');
   background-size: cover;
 }
 

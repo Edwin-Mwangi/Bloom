@@ -115,7 +115,7 @@ button:hover i{
 /*img  selection */
 div.img.one {
     @apply row-start-1 row-end-3;
-    background-image: url('../public/assets/images/lavender2.jpg');
+    background-image: url('./assets/images/lavender2.jpg');
     background-size: cover;
 }
 div.img.one.active {
@@ -123,7 +123,7 @@ div.img.one.active {
 }
 div.img.two {
     @apply row-start-3 row-end-4;
-    background-image: url('../public/assets/images/lavender.jpg');
+    background-image: url('./assets/images/lavender.jpg');
     background-size: cover;
 }
 div.img.two.active {
@@ -131,7 +131,7 @@ div.img.two.active {
 }
 div.img.three {
     @apply row-start-1 row-end-2;
-    background-image: url('../public/assets/images/tulips2.jpg');
+    background-image: url('./assets/images/tulips2.jpg');
     background-size: cover;
 }
 div.img.three.active {
@@ -139,7 +139,7 @@ div.img.three.active {
 }
 div.img.four {
     @apply row-start-2 row-end-4;
-    background-image: url('../public/assets/images/roses2.jpg');
+    background-image: url('./assets/images/roses2.jpg');
     background-size: cover;
 }
 div.img.four.active {
@@ -147,14 +147,14 @@ div.img.four.active {
 }
 div.img.five {
     @apply row-start-1 row-end-3;
-    background-image: url('../public/assets/images/roses.jpg');
+    background-image: url('./assets/images/roses.jpg');
     background-size: cover;
 }
 div.img.five.active {
     @apply col-start-1;
 }
 div.img.six {
-    background-image: url('../public/assets/images/tulips3.jpg');
+    background-image: url('./assets/images/tulips3.jpg');
     background-size: cover;
 }
 

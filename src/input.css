@@ -94,7 +94,7 @@ button:hover i{
  }
 
  .header span {
-    @apply border-b-2 border-solid border-pink-400 cursor-pointer;/*base*/
+    @apply border-b-2 border-solid border-pink-500 cursor-pointer;/*base*/
 }
 
  .header span:active {

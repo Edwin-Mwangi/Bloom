@@ -1467,8 +1467,9 @@ input:focus, textarea:focus {
 
   .images .album {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(6, 500px);
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: repeat(6,minmax(500px,auto));
+    gap: 0.5rem;
   }
 
   .album div.one {
@@ -1499,6 +1500,27 @@ input:focus, textarea:focus {
   .album div.six {
     grid-row-start: 6;
     grid-row-end: 7;
+  }
+
+  .album div.img:hover #hover {
+    /* larger perspective val = smaller perspective can be px,cm,rem etc but 0 no perspective */
+    transform: perspective(100rem);
+  }
+
+  .album div.img .imgtext h4{
+    font-size: larger;
+  }
+
+  div.img.one.active,  div.img.four.active,  div.img.six.active {
+    grid-column-start: 1;
+    grid-row: span 1 / span 1;
+    grid-row-start: 1;
+  }
+
+  div.img.two.active,  div.img.three.active,  div.img.five.active {
+    grid-column-start: 1;
+    grid-row: span 1 / span 1;
+    grid-row-start: 2;
   }
 }
 

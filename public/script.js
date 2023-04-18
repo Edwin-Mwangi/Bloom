@@ -51,8 +51,51 @@ function checkSections(){
 }
 
 
-//scroll behavior
-//tbd
+//hover on gallery images behavior
+
+const imgData = [
+     {
+        title: 'Lavenders',
+        text: 'The scent pulls you',
+        tall: true
+    },
+    {
+        title: 'Lavenders',
+        text: 'Bringing color to your world',
+        tall: false
+    },
+    {
+        title: 'Tulips',
+        text: 'Blooming in its own time',
+        tall: false
+    },
+    {
+        title: 'Roses',
+        text: 'Take time to smell the roses',
+        tall: true
+    },
+    {
+        title: 'Roses',
+        text: 'Beautiful even as they fade',
+        tall: true
+    },
+    {
+        title: 'Tulips',
+        text: 'Medicine for the soul ',
+        tall: false,
+    }   
+]
+const images = document.querySelectorAll('.album div.img');
+images.forEach((img, index) => {
+        img.innerHTML = `<div id="hover"></div>
+        <div class="imgtext absolute translate-y-20 opacity-0 left-1/2 -translate-x-1/2 text-center">
+           <i></i>
+           <h4 class="relative text-xl mx-auto font-medium bg-orange-600 rounded-sm w-fit px-2">${imgData[index].title}</h4>
+           <em class="whitespace-nowrap text-gray-500">${imgData[index].text}</em>
+        </div>`;
+    })
+    
+
 
 //gallery behaviour
 const imgOptions = document.querySelectorAll('div.header span');

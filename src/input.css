@@ -82,7 +82,7 @@ button:hover i{
  }
 
  .box:hover {
-     @apply bg-white text-black transition ease-in duration-200;
+     @apply bg-pink-300 text-pink-900 transition ease-in duration-200;
  }
 
  .box h2 {
@@ -95,6 +95,10 @@ button:hover i{
 
  .header span {
     @apply border-b-2 border-solid border-pink-500 cursor-pointer;/*base*/
+}
+
+.header span:hover {
+    @apply -translate-y-[2px] text-blue-100 ease-in duration-75;
 }
 
  .header span:active {
@@ -178,8 +182,11 @@ div.img.six.active {
     transition: all 0.4s ease-in-out;
 }
 
-.album div.img:hover .imgtext {
+.album .one:hover .imgtext,.four:hover .imgtext,.five:hover .imgtext{
     @apply opacity-100 translate-y-24;
+}
+.album .two:hover .imgtext,.three:hover .imgtext,.six:hover .imgtext{
+    @apply opacity-100 translate-y-12;
 }
 
 /* .album div:nth-child(even) {
@@ -193,6 +200,10 @@ input::placeholder, textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10
     color: white;
     opacity: 1; /* Firefox */
   }
+
+input:focus, textarea:focus { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    @apply bg-pink-200 text-pink-900  border-pink-600
+}
 
 @media(max-width: 1250px){
     body #bodywrapper {
